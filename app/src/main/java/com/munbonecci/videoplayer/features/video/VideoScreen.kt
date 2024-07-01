@@ -32,6 +32,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.munbonecci.videoplayer.commons.Constants
 import com.munbonecci.videoplayer.components.VideoPlayer
 import com.munbonecci.videoplayer.domain.VideoEntity
+import com.munbonecci.videoplayer.features.ExpandableText
 import com.munbonecci.videoplayer.ui.theme.VideoPlayerTheme
 import com.munbonecci.videoplayer.ui.theme.dimen_0dp
 import com.munbonecci.videoplayer.ui.theme.dimen_16dp
@@ -117,6 +118,7 @@ fun VideoItem(
             color = Color.White,
             fontSize = 12.sp
         )
+        ExpandableText()
     }
 }
 
