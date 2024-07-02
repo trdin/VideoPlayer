@@ -3,6 +3,7 @@ package com.munbonecci.videoplayer.features
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -12,15 +13,17 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.munbonecci.videoplayer.components.ExpandableText
 
 @Composable
-fun ExpandableText(
+fun ExpandableText1(
     summary: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex tellus, tempus id volutpat nec, efficitur quis odio. In hac habitasse platea dictumst. In feugiat eget orci sed porta. Vestibulum in lobortis turpis. Aliquam urna risus, gravida eu ante et, vestibulum porta justo. Morbi eleifend metus massa, eget commodo lorem faucibus ut. Aliquam efficitur, justo ut molestie molestie, ligula nulla aliquam dolor, vel venenatis eros arcu sit amet nisl. Quisque in tempus diam, a pretium metus. Morbi vulputate nisl ut metus consequat lacinia. Sed aliquet ex a ante placerat ornare. Morbi laoreet, turpis sed faucibus fringilla, velit tellus sodales orci, a tempor augue turpis quis lectus. Vivamus iaculis a nibh eu sagittis. Etiam eu sollicitudin purus. Maecenas eu eleifend mauris. Mauris arcu augue, gravida non risus ac, condimentum pulvinar velit." ,
     numberOfLines: Int = 5
 ) {

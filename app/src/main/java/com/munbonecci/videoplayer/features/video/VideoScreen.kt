@@ -27,12 +27,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.layoutId
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.munbonecci.videoplayer.commons.Constants
+import com.munbonecci.videoplayer.components.ExpandableText
 import com.munbonecci.videoplayer.components.VideoPlayer
 import com.munbonecci.videoplayer.domain.VideoEntity
-import com.munbonecci.videoplayer.features.ExpandableText
+import com.munbonecci.videoplayer.features.ExpandableText1
 import com.munbonecci.videoplayer.ui.theme.VideoPlayerTheme
 import com.munbonecci.videoplayer.ui.theme.dimen_0dp
 import com.munbonecci.videoplayer.ui.theme.dimen_16dp
@@ -118,7 +120,9 @@ fun VideoItem(
             color = Color.White,
             fontSize = 12.sp
         )
-        ExpandableText()
+        ExpandableText(text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex tellus, tempus id volutpat nec, efficitur quis odio. In hac habitasse platea dictumst. In feugiat eget orci sed porta. Vestibulum in lobortis turpis. Aliquam urna risus, gravida eu ante et, vestibulum porta justo. Morbi eleifend metus massa, eget commodo lorem faucibus ut. Aliquam efficitur, justo ut molestie molestie, ligula nulla aliquam dolor, vel venenatis eros arcu sit amet nisl. Quisque in tempus diam, a pretium metus. Morbi vulputate nisl ut metus consequat lacinia. Sed aliquet ex a ante placerat ornare. Morbi laoreet, turpis sed faucibus fringilla, velit tellus sodales orci, a tempor augue turpis quis lectus. Vivamus iaculis a nibh eu sagittis. Etiam eu sollicitudin purus. Maecenas eu eleifend mauris. Mauris arcu augue, gravida non risus ac, condimentum pulvinar velit.",
+            fontSize = 25.sp, modifier = Modifier.padding(horizontal = 10.dp), collapsedMaxLine = 5)
+       ExpandableText1()
     }
 }
 
