@@ -1,3 +1,8 @@
+<p>This repository was forked and modified to report a bug in the Compose Foundation library, version 1.7.0-beta02. The aim is to facilitate easy reproduction of the bug.</p>
+
+[the bug report](https://issuetracker.google.com/issues/350528367)
+
+
 <h1 align="center">VideoPlayer</h1> 
 
 <p align="center">
